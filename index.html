@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./images/logo.png">
+  <title>(Demo) Spotify - Web Player: Music for everyone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav-option" style="opacity: 1;">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
+        </div>
+      </div>
+      <div class="library">
+        <div class="options">
+          <div class="lib-options nav-option">
+            <img src="./images/library_icon.png" alt="library-image" class="lib-image">
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="lib-boxes">
+          <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we'll help you</p>
+            <button class="badge">Create playlist</button>
+          </div>
+        </div>
+        <div class="lib-boxes">
+          <div class="box">
+            <p class="box-p1">Let's find some podcasts to follow</p>
+            <p class="box-p2">We'll keep you updated on new episodes</p>
+            <button class="badge">Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+          <img src="./images/backward_icon.png" alt="backward_icon" class="backward-icon">
+          <img src="./images/forward_icon.png" alt="forward_icon" class="forward-icon hide">
+        </div>
+        <div class="sticky-nav-options">
+          <button class="sticky-nav-badge hide">Explore Premium</button>
+          <button class="sticky-nav-badge dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 0.3rem;"></i>Install App</button>
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+
+      <h2>Find Your Favorites</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./images/card1img.jpeg" class="card-img">
+          <p class="card-title">Top 50 - Global</p>
+          <div class="card-info">Your daily update of the most played...</div>
+        </div>
+        <div class="card">
+          <img src="./images/liked-songs.jpg" class="card-img">
+          <p class="card-title">Liked Songs</p>
+          <div class="card-info">A collection of your most played songs</div>
+        </div>
+      </div>
+
+      <h2>Made For You</h2>
+      <div class="cards-container">
+        <div class="card mfy">
+          <img src="./images/daily1.jpeg" class="card-img">
+          <div class="card-info">Karma, Seedhe Maut, KR$NA amd more</div>
+        </div>
+        <div class="card mfy">
+          <img src="./images/daily2.jpeg" class="card-img">
+          <div class="card-info">Central Cee, Dave, D- Block Europe & more</div>
+        </div>
+        <div class="card mfy">
+          <img src="./images/daily3.jpeg" class="card-img">
+          <div class="card-info">Hansraj Raghuwanshi, Lov...</div>
+        </div>
+        <div class="card mfy">
+          <img src="./images/daily4.jpeg" class="card-img">
+          <div class="card-info">J. Cole, Drake, PARTYNEXTDOOR a...</div>
+        </div>
+        <div class="card mfy">
+          <img src="./images/daily5.jpeg" class="card-img">
+          <div class="card-info">Karma, Paradox, Panther and more</div>
+        </div>
+        <div class="card mfy">
+          <img src="./images/daily6.jpeg" class="card-img">
+          <div class="card-info">Karma, Raftaar, Parv Music and more</div>
+        </div>
+      </div>
+
+
+      <h2>Recently Played</h2>
+      <div class="cards-container">
+        <div class="card rp">
+          <img src="./images/shutdown.jpeg" class="card-img">
+          <div class="card-info">SHUTDOWN</div>
+        </div>
+        <div class="card rp">
+          <img src="./images/thisiskarma.jpeg" class="card-img">
+          <div class="card-info">This Is Karma</div>
+        </div>
+        <div class="card rp">
+          <img src="./images/w.jpeg" class="card-img">
+          <div class="card-info">W</div>
+        </div>
+        <div class="card rp">
+          <img src="./images/thisiscentralcee.jpg" class="card-img">
+          <div class="card-info">This Is Central Cee</div>
+        </div>
+        <div class="card rp">
+          <img src="./images/forest-hills.jpeg" class="card-img">
+          <div class="card-info">2014 Forest Hills Drive</div>
+        </div>
+        <div class="card rp">
+          <img src="./images/thisism.jpeg" class="card-img">
+          <div class="card-info">This Is Seedhe Maut</div>
+        </div>
+      </div>
+
+
+
+      <h2>Discover picks for you</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./images/sholay.jpeg" class="card-img">
+          <p class="card-title">Sholay</p>
+          <div class="card-info">Farhan Khan, DEETOCX</div>
+        </div>
+        <div class="card">
+          <img src="./images/hungry.jpeg" class="card-img">
+          <p class="card-title">Hungry Artist</p>
+          <div class="card-info">Sahaj</div>
+        </div>
+        <div class="card">
+          <img src="./images/dheelde.jpeg" class="card-img">
+          <p class="card-title">Dheel De</p>
+          <div class="card-info">Hardbone boy</div>
+        </div>
+        <div class="card">
+          <img src="./images/fanka.jpeg" class="card-img">
+          <p class="card-title">Fankaa</p>
+          <div class="card-info">Arpit Bala, Darcy, Fatboi Raccoon</div>
+        </div>
+        <div class="card">
+          <img src="./images/6pe6.jpeg" class="card-img">
+          <p class="card-title">6 pe 6</p>
+          <div class="card-info">Karma</div>
+        </div>
+        <div class="card">
+          <img src="./images/srk.jpeg" class="card-img">
+          <p class="card-title">SRK</p>
+          <div class="card-info">Seedhe Maut</div>
+        </div>
+        <div class="card">
+          <img src="./images/sultanate.jpeg" class="card-img">
+          <p class="card-title">SULTANATE</p>
+          <div class="card-info">Siyaahi</div>
+        </div>
+      </div>
+
+
+
+      <h2>Recommended Stations</h2>
+      <div class="cards-container">
+        <div class="card rec-sta">
+          <img src="./images/radiokarma.jpeg" class="card-img">
+          <div class="card-info">With Naam Sujal, Seedhe Maut, Fotty...</div>
+        </div>
+        <div class="card rec-sta">
+          <img src="./images/radioyashraj.jpeg" class="card-img">
+          <div class="card-info">With Seedhe Maut, Nanku, Raftaar and...</div>
+        </div>
+        <div class="card rec-sta">
+          <img src="./images/radiosm.jpeg" class="card-img">
+          <div class="card-info">With vichaar, Raftaar, Chaar Diwaari and...</div>
+        </div>
+        <div class="card rec-sta">
+          <img src="./images/radiokrsna.jpeg" class="card-img">
+          <div class="card-info">With Seedhe Maut, Footy Seven, Raga...</div>
+        </div>
+        <div class="card rec-sta">
+          <img src="./images/radiow.jpeg" class="card-img">
+          <div class="card-info">With Seedhe Maut, Chaar Diwaari, Fra...</div>
+        </div>
+      </div>
+
+
+
+      <h2>Episodes You Might Like</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./images/bhagvat.jpeg" class="card-img">
+          <p class="card-title">Bhagvad Gita (Hindi)</p>
+          <div class="card-info">Swami Adgadanand</div>
+        </div>
+        <div class="card">
+          <img src="./images/raj-shamani.jpeg" class="card-img">
+          <p class="card-title">Vikas Divyakirti On India VS Ch...</p>
+          <div class="card-info"><ul><li>Nov 2025</li></ul></div>
+        </div>
+        <div class="card">
+          <img src="./images/raj-shamani2.jpeg" class="card-img">
+          <p class="card-title">Bill Gates On India, Billion Do...</p>
+          <div class="card-info"><ul><li>Mar 2025</li></ul></div>
+        </div>
+        <div class="card">
+          <img src="./images/raj-shamani3.jpeg" class="card-img">
+          <p class="card-title">Sunita Williams Podcast - Inside...</p>
+          <div class="card-info"><ul><li>Jan 2026</li></ul></div>
+        </div>
+        <div class="card">
+          <img src="./images/raj-shamani4.jpeg" class="card-img">
+          <p class="card-title">Why Michael Phelps Was Un...</p>
+          <div class="card-info"><ul><li>Jan 2026</li></ul></div>
+        </div>
+        <div class="card">
+          <img src="./images/raj-shamani5.jpeg" class="card-img">
+          <p class="card-title">Modern Wars, Cyber Attacks, S...</p>
+          <div class="card-info"><ul><li>Jan 2026</li></ul></div>
+        </div>
+        <div class="card">
+          <img src="./images/raj-shamani6.jpeg" class="card-img">
+          <p class="card-title">Fever Treatment at Home: What t...</p>
+          <div class="card-info"><ul><li>Dec 2025</li></ul></div>
+        </div>
+      </div>
+
+
+      <h2>Featured Charts</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./images/card5img.jpeg" class="card-img">
+          <p class="card-title">Top Songs Global</p>
+          <div class="card-info">Your weekly update of the most played tracks right now - Global.</div>
+        </div>
+        <div class="card">
+          <img src="./images/card6img.jpeg" class="card-img">
+          <p class="card-title">Top Songs India</p>
+          <div class="card-info">Your weekly update of the most played tracks right now - India.</div>
+        </div>
+        <div class="card">
+          <img src="./images/card1img.jpeg" class="card-img">
+          <p class="card-title">Top 50 - Global</p>
+          <div class="card-info">Your daily update of the most played tracks.</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="music-player">
+      <div class="left">
+        <div class="music-details">
+          <img src="./images/w.jpeg">
+          <div class="music-info">
+            <div class="song-name">W</div>
+            <div class="song-artist">Seedhe Maut</div>
+          </div>
+        </div>
+        <div class="music-player-icons">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        
+      </div>
+      <div class="center">
+        <div class="player-controls">
+          <img src="./images/player_icon1.png" class="player-control-icon">
+          <img src="./images/player_icon2.png" class="player-control-icon">
+          <img src="./images/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+          <img src="./images/player_icon4.png" class="player-control-icon">
+          <img src="./images/player_icon5.png" class="player-control-icon">
+        </div>
+
+        <div class="playback-bar">
+          <span class="curr-time">0:00</span>
+          <input type="range" min="0" max="100" class="progress-bar" step="1" value="0">
+          <span class="tot-time">3:33</span>
+        </div>
+      </div>
+      <div class="right">
+        <span class="material-symbols-outlined">slideshow</span>
+        <span class="material-symbols-outlined">mic_external_on</span>
+        <span class="material-symbols-outlined">stack</span>
+        <span class="material-symbols-outlined">devices</span>
+        <span class="sound-plus-sound-bar">
+          <span class="material-symbols-outlined">brand_awareness</span>
+          <input type="range" min="0" max="100" value="50" step="1" class="sound-bar">
+        </span>
+        <span class="material-symbols-outlined">picture_in_picture_alt</span>
+        <span class="material-symbols-outlined">zoom_out_map</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
