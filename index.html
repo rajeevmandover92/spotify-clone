@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="./images/logo.png">
-  <title>(Demo) Spotify - Web Player: Music for everyone</title>
+  <title>(Demo) Spotify - layout clone</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -283,12 +283,14 @@
         
       </div>
       <div class="center">
-        <div class="player-controls">
-          <img src="./images/player_icon1.png" class="player-control-icon">
-          <img src="./images/player_icon2.png" class="player-control-icon">
-          <img src="./images/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
-          <img src="./images/player_icon4.png" class="player-control-icon">
-          <img src="./images/player_icon5.png" class="player-control-icon">
+        <div class="container-for-player-controls">
+          <div class="player-controls">
+            <img src="./images/player_icon1.png" class="player-control-icon center-one">
+            <img src="./images/player_icon2.png" class="player-control-icon center-two">
+            <img src="./images/player_icon3.png" class="player-control-icon center-three" style="opacity: 1; height: 2rem;">
+            <img src="./images/player_icon4.png" class="player-control-icon center-four">
+            <img src="./images/player_icon5.png" class="player-control-icon center-five">
+          </div>
         </div>
 
         <div class="playback-bar">
@@ -298,16 +300,16 @@
         </div>
       </div>
       <div class="right">
-        <span class="material-symbols-outlined">slideshow</span>
-        <span class="material-symbols-outlined">mic_external_on</span>
-        <span class="material-symbols-outlined">stack</span>
-        <span class="material-symbols-outlined">devices</span>
+        <span class="material-symbols-outlined one">slideshow</span>
+        <span class="material-symbols-outlined two">mic_external_on</span>
+        <span class="material-symbols-outlined three">stack</span>
+        <span class="material-symbols-outlined four">devices</span>
         <span class="sound-plus-sound-bar">
-          <span class="material-symbols-outlined">brand_awareness</span>
+          <span class="material-symbols-outlined five">brand_awareness</span>
           <input type="range" min="0" max="100" value="50" step="1" class="sound-bar">
         </span>
-        <span class="material-symbols-outlined">picture_in_picture_alt</span>
-        <span class="material-symbols-outlined">zoom_out_map</span>
+        <span class="material-symbols-outlined six">picture_in_picture_alt</span>
+        <span class="material-symbols-outlined seven">zoom_out_map</span>
       </div>
     </div>
   </div>
