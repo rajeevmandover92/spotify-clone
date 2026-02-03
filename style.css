@@ -283,7 +283,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25%;
+    width: 28%;
 }
 
 .music-player .music-details{
@@ -298,11 +298,12 @@ a{
 }
 
 .music-player .center{
-    width: 50%;
+    width: 44%;
+    flex-shrink: 5;
 }
 
 .music-player .right{
-    width: 25%;
+    width: 28%;
 }
 
 .song-name{
@@ -324,7 +325,7 @@ a{
 .music-player .right{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .sound-plus-sound-bar{
@@ -410,3 +411,201 @@ a{
     border-radius: 50%;
     margin-top: -6px;
 }
+
+.container-for-player-controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-five{
+    margin-right: 0;
+}
+
+@media (max-width: 1200px) {
+    .one, .two, .six, .seven{
+        display: none;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1200px){
+    .music-player .left{
+        width: 25%;
+    }
+    
+    .music-player .center{
+        width: 50%;
+    }
+    .music-player .right{
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1080px) {
+    .music-player .right{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar{
+        display: none;
+    }
+
+    .music-player .right{
+        display: none;
+    }
+
+    .music-player .center{
+        width: 70%;
+    }
+    
+    .music-player .left{
+        width: 30%;
+    }
+    
+    .main {
+    padding: 0;
+    }
+
+    .main-content {
+    border-radius: 0;
+    padding: 0 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .music-player .center .playback-bar .curr-time, .tot-time{
+        display: none;
+    }
+
+    .music-player .center .player-controls{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 710px) {
+    .music-player .left .music-player-icons .fa-heart{
+        display: none;
+    }
+    
+    .music-player .left .music-details .music-info .song-artist{
+        display: none;
+    }
+    
+    .music-player .left{
+        width: 23%;
+    }
+    .music-player .center{
+        width: 77%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 470px) {
+    .music-player .center .player-controls{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: fit-content;
+        flex-shrink: 0;
+    }
+    
+    .music-player .center .player-controls .center-one, .center-five{
+        display: none;
+    }
+    .center-four{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .music-player .left .music-details .music-info .song-name{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+}
+/* ===============================
+   RESPONSIVE FIXES
+   =============================== */
+
+/* 1. Fix mobile scrolling */
+/* body {
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+
+/* 2. Responsive sidebar */
+/* @media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .main-content {
+    border-radius: 0;
+    padding: 0 1rem;
+  }
+} */
+
+/* 3. Responsive cards */
+/* .card {
+  width: clamp(130px, 40vw, 170px);
+} */
+
+/* 4. Smooth horizontal scroll on mobile */
+/* .cards-container {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+} */
+
+/* .card {
+  scroll-snap-align: start;
+} */
+
+/* 5. Responsive music player (tablet & mobile) */
+/* @media (max-width: 700px) {
+  .music-player .right {
+    display: none;
+  }
+
+  .music-player .left {
+    width: 40%;
+  }
+
+  .music-player .center {
+    width: 60%;
+  }
+
+  .player-control-icon {
+    margin-right: 1rem;
+  }
+} */
+
+/* 6. Extra small phones */
+/* @media (max-width: 480px) {
+  .music-player .music-details img {
+    display: none;
+  }
+
+  .song-artist {
+    display: none;
+  }
+} */
+
+/* 7. Typography scaling */
+/* html {
+  font-size: 16px;
+} */
+
