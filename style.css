@@ -411,6 +411,49 @@ a{
     border-radius: 50%;
     margin-top: -6px;
 }
+/* .progress-bar::-moz-range-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-moz{
+    appearance: none;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+} */
+
+input[type="range"] {
+  appearance: none;
+  -moz-appearance: none;
+}
+
+/* Full track */
+input[type="range"]::-moz-range-track {
+  background-color: #ddd;
+  height: 0.2rem;
+  border-radius: 100px;
+}
+
+/* Filled progress */
+input[type="range"]::-moz-range-progress {
+  background-color: #1bd760;
+  height: 0.2rem;
+  border-radius: 100px;
+}
+
+/* Thumb */
+input[type="range"]::-moz-range-thumb {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #1bd760;
+  border-radius: 50%;
+  border: none;
+}
+
 
 .container-for-player-controls{
     width: 100%;
@@ -533,79 +576,3 @@ a{
     font-size: 15px;
   }
 }
-/* ===============================
-   RESPONSIVE FIXES
-   =============================== */
-
-/* 1. Fix mobile scrolling */
-/* body {
-  overflow-x: hidden;
-  overflow-y: auto;
-} */
-
-/* 2. Responsive sidebar */
-/* @media (max-width: 900px) {
-  .sidebar {
-    display: none;
-  }
-
-  .main {
-    padding: 0;
-  }
-
-  .main-content {
-    border-radius: 0;
-    padding: 0 1rem;
-  }
-} */
-
-/* 3. Responsive cards */
-/* .card {
-  width: clamp(130px, 40vw, 170px);
-} */
-
-/* 4. Smooth horizontal scroll on mobile */
-/* .cards-container {
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-} */
-
-/* .card {
-  scroll-snap-align: start;
-} */
-
-/* 5. Responsive music player (tablet & mobile) */
-/* @media (max-width: 700px) {
-  .music-player .right {
-    display: none;
-  }
-
-  .music-player .left {
-    width: 40%;
-  }
-
-  .music-player .center {
-    width: 60%;
-  }
-
-  .player-control-icon {
-    margin-right: 1rem;
-  }
-} */
-
-/* 6. Extra small phones */
-/* @media (max-width: 480px) {
-  .music-player .music-details img {
-    display: none;
-  }
-
-  .song-artist {
-    display: none;
-  }
-} */
-
-/* 7. Typography scaling */
-/* html {
-  font-size: 16px;
-} */
-
