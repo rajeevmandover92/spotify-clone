@@ -298,12 +298,12 @@ a{
 }
 
 .music-player .center{
-    width: 50%;
+    width: 45%;
     flex-shrink: 5;
 }
 
 .music-player .right{
-    width: 28%;
+    width: 33%;
 }
 
 .song-name{
