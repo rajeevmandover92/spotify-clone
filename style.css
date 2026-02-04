@@ -283,7 +283,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25%;
+    width: 22%;
 }
 
 .music-player .music-details{
@@ -303,7 +303,7 @@ a{
 }
 
 .music-player .right{
-    width: 25%;
+    width: 28%;
 }
 
 .song-name{
