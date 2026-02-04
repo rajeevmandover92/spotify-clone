@@ -415,9 +415,27 @@ a{
     background-color: #ddd;
     border-radius: 100px;
     height: 0.2rem;
+} */
+
+.material-symbols-outlined {
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.progress-bar::-moz{
+.music-player .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.music-player .right span {
+  padding: 2px;
+}
+
+/* .progress-bar::-moz{
     appearance: none;
     height: 0.9rem;
     width: 0.9rem;
