@@ -298,12 +298,12 @@ a{
 }
 
 .music-player .center{
-    width: 45%;
+    width: 48%;
     flex-shrink: 5;
 }
 
 .music-player .right{
-    width: 33%;
+    width: 30%;
 }
 
 .song-name{
@@ -444,6 +444,11 @@ a{
     margin-top: -6px;
 } */
 
+.spotify-logo{
+    height: 1.5rem;
+    display: none;
+}
+
 input[type="range"] {
   appearance: none;
   -moz-appearance: none;
@@ -513,6 +518,15 @@ input[type="range"]::-moz-range-thumb {
 
 @media (max-width: 900px) {
     .sidebar{
+        display: none;
+    }
+
+    .main-content .sticky-nav .sticky-nav-icons .spotify-logo{
+        display: block;
+        height: 2rem;
+    }
+
+    .main-content .sticky-nav .sticky-nav-icons .backward-icon{
         display: none;
     }
 
